@@ -1,0 +1,297 @@
+:root {
+    --primary-color: #630000;
+    --secondary-color: #a51717f7;
+}
+
+
+@font-face {
+    font-family: poppins;
+    src: url('./font/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: poppinsb;
+    src: url('./font/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: Optien;
+    src: url('./font/Optien.ttf');
+}
+
+@font-face {
+    font-family: Bahnschrift;
+    src: url('./font/bahnschrift.ttf');
+}
+
+@font-face {
+    font-family: segoe UI;
+    src: url('./font/segoeui.ttf');
+}
+
+@font-face {
+    font-family: segoeb;
+    src: url('./font/segoeuib.ttf');
+}
+
+
+.titulo_item {
+    font-size: 21px;    
+}
+
+.item_icon {
+    font-size: 100px;
+    text-align: center;
+}
+
+.item_quadrado:hover .titulo_item,
+.item_quadrado:hover .item_icon {
+    transition: 0.4s;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+
+.form {
+    position: fixed;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 99;
+    overflow: auto;
+}
+
+.form-close {
+    width: 100%;
+    text-align: right;
+    margin: -4rem 0 1rem;
+}
+
+.form-close-link {
+    color: var(--secondary-color);
+}
+
+.form-close i {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+.form-field {
+    transition: margin-top 2s;
+    -moz-transition: margin-top 2s;
+    -webkit-transition: margin-top 2s;
+    margin-top: -300vh;
+    background-color: white;
+    width: 600px;
+    padding: 2rem;
+    border: none;
+    border-radius: 15px;
+    -moz-z-index: 100;
+    -webkit-z-index: 100;
+    z-index: 100;
+}
+
+.form-legend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    padding: 2rem;
+    border-radius: 50%;
+    color: white;
+}
+
+.form-legend-icon {
+    font-size: 3rem;
+    display: block;
+}
+
+.form-item {
+    display: block;
+}
+
+.form-title {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.form-content {
+    margin-top: -1rem;
+}
+
+.form-input {
+    width: 100%;
+    border: none;
+    background: inherit;
+    border-bottom: 2px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.form-input-v2 {
+    width: 100%;
+    float: left;
+    border: none;
+    background: inherit;
+    padding: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+    border-left: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.form-checkbox {
+    display: inline-block;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.form-group {
+    justify-content: space-between;
+}
+
+.form-select {
+    margin: 10px 0;
+    color: var(--primary-color);
+    padding: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    background: inherit;
+    border: 0.5px solid var(--primary-color);
+}
+
+.form-select-v2 {
+    margin: 10px 0;
+    color: var(--primary-color);
+    padding: 1rem;
+    width: 48%;
+    float: left;
+    margin-left: 1.5%;
+    border-radius: 5px;
+    background: inherit;
+    border: 0.5px solid var(--primary-color);
+}
+
+.form-button {
+    width: 100%;
+    display: block;
+    float: left;
+    border: none;
+    background: inherit;
+    padding: 1rem;
+    border-radius: 5px;
+    transform: background-color 1s, color 1.2s;
+}
+
+.button-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.button-secondary {
+    background-color: rgb(150, 150, 150);
+    border: 0.5px solid rgb(150, 150, 150);
+    color: #fff;
+}
+
+.button-secondary:hover {
+    background-color: rgb(209, 194, 194);
+    color: white;
+}
+
+.flex {
+    display: flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+}
+
+.block {
+    display: block!important;
+}
+
+.margin-0 {
+    margin-top: 0;
+}
+
+.read {
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+#more {
+    display: none;
+}
+
+.confirmation {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+.confirmation-close {
+    width: 100%;
+    text-align: right;
+}
+
+.confirmation-close-link {
+    color: var(--secondary-color);
+}
+
+.confirmation-close i {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+.confirmation-field {
+    background-color: white;
+    width: 600px;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 15px;
+}
+
+.confirmation-title {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.confirmation-content {
+    margin: 1rem 0 2rem;
+    text-align: center;
+}
+
+.confirmation-input {
+    margin: 20px 0;
+    width: 100%;
+    border: none;
+    background: inherit;
+    padding: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.confirmation-checkbox {
+    display: inline-block;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.confirmation-group {
+    justify-content: space-between;
+}
+
+.confirmation-text {
+    text-align: center;
+    padding: 1.5rem;
+}
